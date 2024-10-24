@@ -1,19 +1,189 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Title</title>
+    <title>KatVR</title>
+    <link rel="icon" href="images/photo/favicon.svg">
     <link
       rel="stylesheet"
       href="./styles/main.scss"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"
+    crossorigin="true">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script src="scripts/main.js"></script>
+
+  <body class="page__body">
+    <div class="container">
+      <header class="header">
+        <div class="top-bar">
+          <div class="top-bar__left">
+            <img class="top-bar__logo"
+            src="images/social/logo.svg" alt="logo">
+
+            <button class="top-bar__en">
+              En
+              <img src="images/photo/Polygon.svg" alt="Polygon">
+            </button>
+          </div>
+
+          <div class="top-bar__right">
+            <a class="top-bar__menu"
+            href="#">
+              <img class="top-bar__img"
+              src="images/social/menu.svg" alt="menu">
+            </a>
+
+
+            <div class="top-bar__nav">
+              <a class="top-bar__link nav" href="#">About</a>
+              <a class="top-bar__link nav" href="#">Tech</a>
+              <a class="top-bar__link nav" href="#">Benefits</a>
+              <a class="top-bar__link nav" href="#">Contact</a>
+              <button class="top-bar__button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <img class="header__image"
+          src="images/photo/image.svg" alt="image1">
+
+          <div class="header__content">
+            <h1 class="header__title header__title--new"> <span class="white-text">THE NEW START OF</span> <span class="blue-text">VR LOCOMOTION</span></h1>
+
+            <p class="header__text">
+              Discover the most comprehensive VR Locomotion system, and unlock infinite motion in any games on any platforms!
+            </p>
+
+            <div class="header__price">1200$</div>
+
+            <button class="button-play">
+              <img class="butt"
+              src="images/photo/Group4.svg" alt="button">
+            </button>
+
+            <button class="header__buy">
+              Buy Now
+            </button>
+          </div>
+        </div>
+
+
+      </header>
+
+      <main class="page__main main">
+        <section class="main__directions directions">
+          <h2 class="directions__title"><span class="white-text">MORE THAN</span> <span class="blue-text">GAMING!</span></h2>
+          <p class="directions__description text3"><span class="blue-text">This also made for people who are interested in...</span></p>
+
+          <aside class="directions__asides">
+            <div class="directions__directions">
+              <img class="directions__img"
+              src="images/photo/hat.svg" alt="image">
+
+              <h3 class="directions__name">EDUCATION</h3>
+              <p class="directions__text">Create aducational simulations, trainings and much more with...</p>
+            </div>
+            <div class="directions__directions">
+              <img class="directions__img"
+              src="images/photo/bild.svg" alt="image">
+
+              <h3 class="directions__name">REAL ESTATE</h3>
+              <p class="directions__text">Desighn architectural projects in a deeply realistic environment...</p>
+            </div>
+            <div class="directions__directions">
+              <img class="directions__img"
+              src="images/photo/arm.svg" alt="image">
+
+              <h3 class="directions__name">FITNESS</h3>
+              <p class="directions__text">Combine business with pleasure, and discover countless ways...</p>
+            </div>
+            <div class="directions__directions">
+              <img class="directions__img"
+              src="images/photo/network.svg" alt="image">
+
+              <h3 class="directions__name">SOCIAL INTERACTIONS</h3>
+              <p class="directions__text">Hang out with your friends in the virtual world when you can’t...</p>
+            </div>
+          </aside>
+        </section>
+
+        <section class="main__about about">
+          <div class="about__product">
+            <h2 class="about__title"><span class="white-text">ABOUT</span> <span class="blue-text">PRODUCT</span></h2>
+            <img src="images/photo/person.svg" alt="person">
+            <p class="about__text">
+              KAT loco is a foot-based VR locomotion system that gives complete physical control over lower-body actions, allowing you to freely walk, run, and carry out just any other movement in virtual reality.
+            </p>
+
+            <button class="button-play">
+              <img class="butt"
+              src="images/photo/Group4.svg" alt="button">
+            </button>
+          </div>
+        </section>
+
+        <section class="main__greetings greetings">
+          <div class="text2"><span class="blue-text">Hello,</span></div>
+          <h2 class="greetings__title">NICE TO MEET <span class="blue-text">YOU!</span></h2>
+
+          <p class="greetings__text">
+            KAT VR is an independent company dedicated to the research, development, and sales of VR Locomotion products and solutions. Founded in 2013, we have quickly grown to become one of the world’s leading professional suppliers of VR games’ & simulations’ equipment
+          </p>
+        </section>
+
+        <section class="main__tech tech">
+          <h2 class="tech__title"><span class="white-text">TECH</span> <span class="blue-text">SPECS</span></h2>
+          <div class="tech__background">
+            <img class="tech__img"
+          src="images/photo/asdasds.svg" alt="asdasds">
+            <div class="tech__content tech__content--sensor">
+              <button class="tech__button">+</button>
+
+              <div class="tech__text">
+                <div class="tech__directions">SENSOR</div>
+                <p>Weight: 35g/1.23oz each
+                  Dimension: 50mm/1.97in
+                  24mm/0.94in
+                  Light: LED lights
+                </p>
+              </div>
+            </div>
+            <div class="tech__content tech__content--connection">
+              <button class="tech__button">+</button>
+
+              <div class="tech__text">
+                <div class="tech__directions">CONNECTION</div>
+                <p>Wireless: Bluetooth 4.2
+                  Signal range: 5m
+                  Receiver: USB 2.0 and above
+                </p>
+              </div>
+            </div>
+            <div class="tech__content tech__content--batterries">
+              <button class="tech__button">+</button>
+
+              <div class="tech__text">
+                <div class="tech__directions">BATTERRIES</div>
+                <p>Type: Lthium-lon polymer batteries
+                  Capacity: 370mAh
+                  Battery life: 10h of continuous use 150 hours on stand by
+                  Charging: Fast charging - 1 hour
+                  Charging voltage and current: 5V = 0.5A
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
   </body>
 </html>

@@ -1,0 +1,29 @@
+.top-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 18px 0 14px;
+  align-items: center;
+
+  &__logo {
+    width: 58px;
+    height: 12px;
+  }
+
+  &__menu {
+    width: 20px;
+    height: 8px;
+  }
+
+  &__en {
+    @media (max-width: 1280px) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    @media (max-width: 1280px) {
+      display: none;
+    }
+  }
+}

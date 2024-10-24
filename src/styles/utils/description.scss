@@ -1,0 +1,33 @@
+.directions {
+  padding-bottom: 50px;
+
+  &__title {
+    margin: 0;
+    padding-top: 33px;
+  }
+
+  &__description {
+    margin: 0;
+    padding: 12px 0;
+    margin-bottom: 30px;
+  }
+
+  &__asides {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__img {
+    @media (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  &__name {
+    margin: 0;
+    color: $c-white;
+    padding-bottom: 11px;
+  }
+
+}

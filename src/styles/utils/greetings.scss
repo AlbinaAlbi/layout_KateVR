@@ -1,0 +1,12 @@
+.greetings {
+  padding-bottom: 50px;
+
+  &__title {
+    color: $c-white;
+    margin: 11px 0 22px;
+  }
+
+  &__text {
+    padding-bottom: 21px;
+  }
+}

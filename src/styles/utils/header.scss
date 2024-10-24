@@ -1,0 +1,37 @@
+.header {
+  &__image {
+    width: 100%;
+  }
+
+  &__title {
+    margin: 0;
+
+    &--new {
+      color: $c-white;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    padding: 17px 0 55px;
+  }
+
+  &__price {
+    color: $c-white;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  &__buy {
+    width: 100%;
+    padding: 11px 0;
+    border-radius: 8px;
+    color: $c-white;
+    background-color: $c-contrast;
+    border: none;
+    font-family: Inter, serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.2px;
+  }
+}
