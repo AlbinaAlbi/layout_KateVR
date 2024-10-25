@@ -69,7 +69,7 @@
               src="images/photo/Group4.svg" alt="button">
             </button>
 
-            <button class="header__buy">
+            <button class="header__buy button">
               Buy Now
             </button>
           </div>
@@ -142,45 +142,166 @@
         <section class="main__tech tech">
           <h2 class="tech__title"><span class="white-text">TECH</span> <span class="blue-text">SPECS</span></h2>
           <div class="tech__background">
-            <img class="tech__img"
-          src="images/photo/asdasds.svg" alt="asdasds">
-            <div class="tech__content tech__content--sensor">
-              <button class="tech__button">+</button>
+            <div class="tech__box">
+              <img class="tech__img"
+            src="images/photo/asdasds.svg" alt="asdasds">
+              <div class="tech__content tech__content--sensor">
+                <button class="tech__button">+</button>
 
-              <div class="tech__text">
-                <div class="tech__directions">SENSOR</div>
-                <p>Weight: 35g/1.23oz each
-                  Dimension: 50mm/1.97in
-                  24mm/0.94in
-                  Light: LED lights
-                </p>
+                <div class="tech__text">
+                  <div class="tech__directions">SENSOR</div>
+                  <p>Weight: 35g/1.23oz each
+                    Dimension: 50mm/1.97in
+                    24mm/0.94in
+                    Light: LED lights
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="tech__content tech__content--connection">
-              <button class="tech__button">+</button>
+              <div class="tech__content tech__content--connection">
+                <button class="tech__button">+</button>
 
-              <div class="tech__text">
-                <div class="tech__directions">CONNECTION</div>
-                <p>Wireless: Bluetooth 4.2
-                  Signal range: 5m
-                  Receiver: USB 2.0 and above
-                </p>
+                <div class="tech__text">
+                  <div class="tech__directions">CONNECTION</div>
+                  <p>Wireless: Bluetooth 4.2
+                    Signal range: 5m
+                    Receiver: USB 2.0 and above
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="tech__content tech__content--batterries">
-              <button class="tech__button">+</button>
+              <div class="tech__content tech__content--batterries">
+                <button class="tech__button">+</button>
 
-              <div class="tech__text">
-                <div class="tech__directions">BATTERRIES</div>
-                <p>Type: Lthium-lon polymer batteries
-                  Capacity: 370mAh
-                  Battery life: 10h of continuous use 150 hours on stand by
-                  Charging: Fast charging - 1 hour
-                  Charging voltage and current: 5V = 0.5A
-                </p>
+                <div class="tech__text">
+                  <div class="tech__directions">BATTERRIES</div>
+                  <p>Type: Lthium-lon polymer batteries
+                    Capacity: 370mAh
+                    Battery life: 10h of continuous use 150 hours on stand by
+                    Charging: Fast charging - 1 hour
+                    Charging voltage and current: 5V = 0.5A
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </section>
+
+        <section class="main__loco loco">
+          <h2 class="loco__title"><span class="white-text">WHY</span> <span class="blue-text">KAT LOCO?</span></h2>
+
+          <aside class="loco__asides">
+            <div class="loco__directions">
+              <img class="loco__img"
+              src="images/photo/social.svg" alt="image">
+
+              <h3 class="loco__name">UNIVERSALLY COMPATIBLE</h3>
+              <p class="loco__text">KAT Loco offers universal compatibility across all major VR headsets and platforms...</p>
+            </div>
+            <div class="loco__directions">
+              <img class="loco__img"
+              src="images/photo/tv.svg" alt="image">
+
+              <h3 class="loco__name">VR/PC CONTROL PANEL</h3>
+              <p class="loco__text">Our Multifunctional Software allows for quick access to KAT Loco’s control panel both from...</p>
+            </div>
+            <div class="loco__directions">
+              <img class="loco__img"
+              src="images/photo/wifi.svg" alt="image">
+
+              <h3 class="loco__name">FITNESS</h3>
+              <p class="loco__text">Combine business with pleasure, and discover countless ways...</p>
+            </div>
+          </aside>
+        </section>
+
+        <section class="main__registration registration">
+          <div class="text2"><span class="blue-text">Have any questions?</span></div>
+          <h2 class="registration__title">GET IN <span class="blue-text">TOUCH</span></h2>
+
+          <form class="registration__form"
+          onsubmit="this.reset(); return false;">
+
+            <input
+            class="registration__input"
+            placeholder="Name*"
+            type="text"
+            required
+            >
+            <input
+            class="registration__input"
+            placeholder="Email*"
+            type="email"
+            required
+            >
+            <input
+            class="registration__input"
+            placeholder="Phone*"
+            type="tel"
+            required
+            >
+
+            <textarea
+            class="registration__textarea"
+            placeholder="Message"
+            name="text"
+            required
+            ></textarea>
+
+            <div class="registration__buttons">
+              <button class="registration__button button">Contact Us</button>
+              <button class="registration__up">
+                <img class="registration__img"
+                src="images/photo/Polygon.svg"
+                alt="Polygon">
+              </button>
+            </div>
+
+            <div class="registration__massage text3">Our manager will reply you within 15 minutes</div>
+          </form>
+        </section>
+
+        <section class="main__inform inform">
+          <img class="inform__logo"
+          src="images/social/logo.svg" alt="logo">
+
+          <aside class="inform__content">
+            <div class="inform__menu">
+              <a class="inform__link"
+              href="#">About</a>
+              <a class="inform__link"
+              href="#">Tech</a>
+              <a class="inform__link"
+              href="#">Benefits</a>
+              <a class="inform__link"
+              href="#">Contact</a>
+            </div>
+
+            <div class="inform__box">
+              <div class="inform__menu">
+                <a class="inform__contact"
+                href="tel:++86-0571-86105373"
+                target="_blank">+86-0571-86105373</a>
+                <a class="inform__contact"
+                href="mailto:global@katvr.com"
+                target="_blank">global@katvr.com</a>
+                <a class="inform__contact"
+                href="mailto:overseas@katvr.com">overseas@katvr.com</a>
+              </div>
+              <div class="inform__icons">
+                <a class="inform__icon"
+                target="_blank"
+                href="images/social/face.svg"></a>
+                <a class="inform__icon"
+                target="_blank"
+                href="images/social/twit.svg"></a>
+                <a class="inform__icon"
+                target="_blank"
+                href="images/social/yout.svg"></a>
+                <a class="inform__icon"
+                target="_blank"
+                href="images/social/Vector.svg"></a>
+              </div>
+            </div>
+          </aside>
         </section>
       </main>
     </div>

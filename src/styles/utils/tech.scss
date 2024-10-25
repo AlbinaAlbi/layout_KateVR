@@ -9,16 +9,32 @@
   }
 
   &__background {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__box {
     position: relative;
     width: 214px;
   }
 
   &__content {
+    position: absolute;
 
     &--sensor {
-      position: absolute;
-      inset: 30px 164px 222px 122px;
+      inset: 0 103px 171px 60px;
     }
+
+    &--connection {
+      inset: 153px 180px 7px -17px;
+    }
+
+    &--batterries {
+      inset: 80px 29px 80px 134px;
+
+    }
+  }
 
   &__button {
     width: 34px;
@@ -38,5 +54,4 @@
       display: none;
     }
   }
-}
 }
