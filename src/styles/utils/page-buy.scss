@@ -25,6 +25,25 @@
     gap: 0;
   }
 
+  &__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include on-desktop {
+      padding-top: 131px;
+    }
+
+    @media (max-width: 640px) {
+      display: none;
+    }
+  }
+
+  &__photo {
+    height: 277px;
+    width: 524px;
+  }
+
   &__link {
     color: $c-text-buy-menu;
     border-bottom: 1px solid $c-dark-grey;
@@ -44,6 +63,16 @@
     padding: 30px 0;
     display: flex;
     justify-content: space-around;
+
+    @include on-tablet {
+      width: 50%;
+    }
+
+    @include on-desktop {
+      padding: 32px 0 0 110px;
+      justify-content: center;
+      gap: 86px;
+    }
   }
 
   &__select {
@@ -94,6 +123,10 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    @include on-desktop {
+      padding-top: 102px;
+    }
   }
 
   &__content {
@@ -111,6 +144,22 @@
       @include on-tablet {
         flex-direction: row;
       }
+    }
+  }
+
+  &__place-order {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include on-desktop {
+      flex-direction: row;
+    }
+  }
+
+  &__orders {
+    @include on-desktop {
+      width: 100%;
     }
   }
 

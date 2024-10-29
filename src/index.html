@@ -98,110 +98,123 @@
       </div>
 
       <div class="buy__nav">
-        <a class="buy__link" href="#">Place Order</a>
+        <a class="buy__link" href="#place-order">Place Order</a>
         <a class="buy__link" href="#">Pay</a>
         <a class="buy__link" href="#">Complete</a>
       </div>
 
-      <div class="buy__order">
-        <div class="buy__quantity">
-          Quantity
-          <div class="buy__select">
-            <div class="buy__trigger trigger">
-              1
-              <img class="buy__img"
-              src="images/photo/Polygon1.svg"
-              alt="Polygon1">
-            </div>
-          </div>
-        </div>
-        <div class="buy__price">
-          Price
-          <span class="blue-text price">1200$</span>
-        </div>
-      </div>
-
-      <div class="container">
-        <form class="buy__form"
-        onsubmit="this.reset(); return false;">
-          <div class="buy__content">
-            <div class="buy__box">
-              <input
-                name="name"
-                required
-                placeholder="First Name*"
-                class="buy__input input"
-                type="text">
-
-              <input
-                name="last name"
-                required
-                placeholder="Last Name*"
-                class="buy__input input"
-                type="text">
-            </div>
-
-            <div class="buy__box">
-              <input
-                name="email"
-                required
-                placeholder="Email*"
-                class="buy__input input"
-                type="email">
-
-              <input
-                name="phone"
-                required
-                placeholder="Phone Number*"
-                class="buy__input input"
-                type="number">
-            </div>
+      <div class="buy__place-order" id="place-order">
+        <div class="buy__orders">
+          <div class="buy__image">
+            <img
+              class="buy__photo"
+              src="images/photo/image.svg"
+              alt="image">
           </div>
 
-          <div class="buy__content buy__content--place">
-            <div class="buy__place">
-              Country*
+          <div class="buy__order">
+            <div class="buy__quantity">
+              Quantity
               <div class="buy__select">
-                <div class="buy__option trigger">
-                  Ukraine
+                <div class="buy__trigger trigger">
+                  1
                   <img class="buy__img"
                   src="images/photo/Polygon1.svg"
                   alt="Polygon1">
                 </div>
               </div>
             </div>
+            <div class="buy__price">
+              Price
+              <span class="blue-text price">1200$</span>
+            </div>
+          </div>
+        </div>
 
-            <div class="buy__place">
-              City*
-              <div class="buy__select">
-                <div class="buy__option trigger">
-                  <img class="buy__img"
-                  src="images/photo/Polygon1.svg"
-                  alt="Polygon1">
+        <div class="buy__orders container">
+          <form class="buy__form"
+          onsubmit="this.reset(); return false;">
+            <div class="buy__content">
+              <div class="buy__box">
+                <input
+                  name="name"
+                  required
+                  placeholder="First Name*"
+                  class="buy__input input"
+                  type="text">
+
+                <input
+                  name="last name"
+                  required
+                  placeholder="Last Name*"
+                  class="buy__input input"
+                  type="text">
+              </div>
+
+              <div class="buy__box">
+                <input
+                  name="email"
+                  required
+                  placeholder="Email*"
+                  class="buy__input input"
+                  type="email">
+
+                <input
+                  name="phone"
+                  required
+                  placeholder="Phone Number*"
+                  class="buy__input input"
+                  type="number">
+              </div>
+            </div>
+
+            <div class="buy__content buy__content--place">
+              <div class="buy__place">
+                Country*
+                <div class="buy__select">
+                  <div class="buy__option trigger">
+                    Ukraine
+                    <img class="buy__img"
+                    src="images/photo/Polygon1.svg"
+                    alt="Polygon1">
+                  </div>
+                </div>
+              </div>
+
+              <div class="buy__place">
+                City*
+                <div class="buy__select">
+                  <div class="buy__option trigger">
+                    <img class="buy__img"
+                    src="images/photo/Polygon1.svg"
+                    alt="Polygon1">
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="buy__content buy__content--adress">
-            <input
-            name="Adress"
-            required
-            placeholder="Shipping Adress*"
-            class="buy__input input"
-            type="text">
-
-            <input
-              name="Adress 2"
+            <div class="buy__content buy__content--adress">
+              <input
+              name="Adress"
               required
-              placeholder="Shipping Adress 2"
+              placeholder="Shipping Adress*"
               class="buy__input input"
               type="text">
-          </div>
 
-          <button class="button">Purchase</button>
-        </form>
+              <input
+                name="Adress 2"
+                required
+                placeholder="Shipping Adress 2"
+                class="buy__input input"
+                type="text">
+            </div>
+
+            <button class="button">Purchase</button>
+          </form>
+        </div>
       </div>
+
+      
     </aside>
 
     <aside
