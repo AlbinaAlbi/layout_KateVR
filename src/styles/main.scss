@@ -4,6 +4,7 @@
 
 * {
   scroll-behavior: smooth;
+  font-family: Inter, serif;
 }
 
 body {
@@ -11,16 +12,24 @@ body {
   margin: 0;
 }
 
+.butt {
+  filter: drop-shadow(1px 1px 20px $c-background);
+}
 
 .button-play {
+  display: flex;
   background: none;
   border: none;
   padding-bottom: 23px;
   cursor: pointer;
+  transition: all $effect-duration ease;
+
+  &:hover {
+    filter: drop-shadow(1px 1px 20px $c-contrast);
+  }
 }
 
 .button {
-  width: 100%;
   padding: 11px 0;
   border-radius: 8px;
   color: $c-white;
@@ -31,8 +40,59 @@ body {
   font-weight: 500;
   line-height: 18.2px;
   cursor: pointer;
+  transition: all $effect-duration;
+
+  &:hover {
+    background-color: $c-white;
+    color: $c-contrast;
+  }
 }
 
 a {
   text-decoration: none;
+}
+
+.nav {
+  color: $c-white;
+  transition: transform $effect-duration ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: $nav-transform;
+  }
+}
+
+.foto-hover {
+  transition: transform $effect-duration ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: $foto-transform;
+  }
+}
+
+.shadow {
+  transition: all $effect-duration ease;
+
+  &:hover {
+    filter: drop-shadow(5px 5px 15px $c-contrast);
+    transform: $nav-transform;
+  }
+}
+
+.input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #2F2F2F;
+  outline: none;
+  color: $c-white;
+  height: 40px;
+}
+
+.trigger {
+  background-color: $bgc-menu;
+  border: none;
+  color: $c-white;
+  cursor: pointer;
+  font-size: 20px;
 }

@@ -1,0 +1,138 @@
+.page {
+  &__buy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+    height: 100%;
+    background: $c-background;
+
+    &:target {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
+
+.buy {
+  &__nav {
+    padding-top: 19px;
+    height: 33px;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  &__link {
+    color: $c-text-buy-menu;
+    border-bottom: 1px solid $c-dark-grey;
+    display: flex;
+    justify-content: center;
+    height: 33px;
+    width: 34%;
+    transition: all .3s ease;
+
+    &:hover {
+      color: $c-contrast;
+      border-bottom: 1px solid $c-contrast;
+    }
+  }
+
+  &__order {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__select {
+    position: relative;
+    width: 100%;
+  }
+
+  &__price,
+  &__quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: $c-text;
+  }
+
+  &__trigger {
+    width: 90px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+
+    &:hover {
+      filter: drop-shadow(1px 1px 3px $c-white);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 17px;
+    right: 18px;
+  }
+
+  &__option {
+    height: 47px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &--place {
+      @include on-tablet {
+        flex-direction: row;
+      }
+    }
+
+    &--adress {
+      @include on-tablet {
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include on-tablet {
+      flex-direction: row;
+      gap: 19px;
+    }
+  }
+
+  &__place {
+    width: 100%;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: $c-text;
+  }
+}
+
+
