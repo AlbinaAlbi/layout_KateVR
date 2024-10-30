@@ -1,3 +1,9 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .page {
   &__buy {
     position: fixed;
@@ -8,6 +14,7 @@
     pointer-events: none;
     height: 100%;
     background: $c-background;
+    transition: opacity .5s ease-in-out;
 
     &:target {
       opacity: 1;

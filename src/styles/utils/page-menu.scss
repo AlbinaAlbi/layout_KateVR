@@ -9,6 +9,7 @@
   height: 100vh;
   pointer-events: none;
   background-color: $bgc-menu;
+  transition: opacity .5s ease-in-out;
 
     &:target {
       opacity: 1;
