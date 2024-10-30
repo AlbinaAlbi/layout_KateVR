@@ -57,10 +57,10 @@
   }
 
   &__directions {
-    text-align: center;
     grid-column: 1/-1;
 
     @include on-tablet {
+      text-align: center;
       grid-column: span 2;
     }
 

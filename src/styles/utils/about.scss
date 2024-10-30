@@ -46,9 +46,7 @@
 
   &__bgimage {
     width: 100%;
-    background-image: url(../images/photo/person.svg);
-    background-size: cover;
-    background-position: center;
+    height: auto;
     grid-column: 1/4;
 
     @include on-desktop {
@@ -60,8 +58,9 @@
     }
   }
 
-  &__img {
+  &__img-hide {
     width: 100%;
+    height: auto;
 
     @media (min-width: 640px) {
       display: none;

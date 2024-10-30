@@ -361,15 +361,66 @@
 
         <section class="main__about about" id="about">
           <div class="about__grid">
-            <div class="about__bgimage"></div>
+            <div class="about__bgimage">
+              <div class="swiper">
+
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                    class="swiper-img"
+                    src="images/photo/person.svg"
+                    alt="person">
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                    class="swiper-img"
+                    src="images/photo/person.svg"
+                    alt="person">
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                    class="swiper-img"
+                    src="images/photo/person.svg"
+                    alt="person">
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
             <div class="about__product">
               <h2 class="about__title">
                 <span class="white-text">ABOUT</span> <span class="blue-text">PRODUCT</span>
               </h2>
-              <img
-                class="about__img"
-                src="images/photo/person.svg"
-                alt="person">
+
+              <div class="about__img-hide">
+                <div class="swiper">
+
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                      class="swiper-img"
+                      src="images/photo/person.svg"
+                      alt="person">
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                      class="swiper-img"
+                      src="images/photo/person.svg"
+                      alt="person">
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                      class="swiper-img"
+                      src="images/photo/person.svg"
+                      alt="person">
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+
               <p class="about__text">
                 KAT loco is a foot-based VR locomotion system that gives complete physical control over lower-body actions, allowing you to freely walk, run, and carry out just any other movement in virtual reality.
               </p>
@@ -711,4 +762,23 @@
       </div>
     </main>
   </body>
+
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+    import 'swiper/css/pagination';
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+
+  </script>
 </html>
