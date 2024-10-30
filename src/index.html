@@ -89,29 +89,32 @@
     </div>
 
     <aside class="page__buy buy" id="buy">
-      <div class="container">
-        <div class="top-bar">
-          <img
-            class="top-bar__logo nav"
-            src="images/social/logo.svg"
-            alt="logo">
-
-          <a class="top-bar__close" href="#">
+      <div class="menu-buy">
+        <div class="container">
+          <div class="top-bar">
             <img
-              class="top-bar__close-buy shadow"
-              src="images/photo/close.svg"
-              alt="close">
-          </a>
+              class="top-bar__logo nav"
+              src="images/social/logo.svg"
+              alt="logo">
+
+            <a class="top-bar__close" href="#">
+              <img
+                class="top-bar__close-buy shadow"
+                src="images/photo/close.svg"
+                alt="close">
+            </a>
+          </div>
+        </div>
+
+        <div class="menu-buy__nav">
+          <a class="menu-buy__link" href="#place-order">Place Order</a>
+          <a class="menu-buy__link" href="#pay">Pay</a>
+          <a class="menu-buy__link" href="#complete">Complete</a>
         </div>
       </div>
 
-      <div class="buy__nav">
-        <a class="buy__link" href="#place-order">Place Order</a>
-        <a class="buy__link" href="#">Pay</a>
-        <a class="buy__link" href="#">Complete</a>
-      </div>
-
       <div class="buy__place-order" id="place-order">
+
         <div class="buy__orders">
           <div class="buy__image">
             <img
@@ -172,7 +175,7 @@
                   required
                   placeholder="Phone Number*"
                   class="buy__input input"
-                  type="number">
+                  type="tel">
               </div>
             </div>
 
@@ -224,7 +227,6 @@
           </form>
         </div>
       </div>
-
     </aside>
 
     <aside class="page__menu menu" id="menu">
@@ -517,20 +519,20 @@
           </aside>
 
           <div class="loco__butt">
-            <button class="loco__button button">Buy Now</button>
+            <a href="#buy" class="loco__button button">Buy Now</a>
           </div>
         </section>
 
         <section class="main__registration registration">
-          <div class="registration__grid">
+          <div class="grid">
             <div class="registration__top">
               <div class="text2"><span class="blue-text">Have any questions?</span></div>
               <h2 class="registration__title">GET IN <span class="blue-text">TOUCH</span></h2>
 
-              <div class="registration__box">
+              <div class="registration__box" id="contact">
                 <div class="registration__massage-hide text3">Our manager will reply you within 15 minutes</div>
 
-                <div class="menu">
+                <div class="registration__menu menu">
                   <a
                     class="contact shadow"
                     href="tel:++86-0571-86105373"
@@ -551,7 +553,6 @@
                 </div>
               </div>
             </div>
-
 
             <form class="registration__form" onsubmit="this.reset(); return false;">
               <input
@@ -597,7 +598,7 @@
 
         <section class="main__inform inform">
           <img
-            class="inform__logo"
+            class="inform__logo shadow"
             src="images/social/logo.svg"
             alt="logo">
 
@@ -609,7 +610,7 @@
               <a class="nav shadow"href="#contact">Contact</a>
             </div>
 
-            <div class="inform__box" id="contact">
+            <div class="inform__box">
               <div class="menus">
                 <a
                   class="contact shadow"
@@ -669,7 +670,7 @@
             </div>
           </aside>
 
-          <div class="inform__icons">
+          <div class="inform__icons inform__icons--hide">
             <a
               class="inform__icon shadow"
               target="_blank"

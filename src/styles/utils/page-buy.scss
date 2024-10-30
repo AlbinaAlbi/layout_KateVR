@@ -16,15 +16,11 @@
   }
 }
 
-.buy {
-  &__nav {
-    padding-top: 19px;
-    height: 33px;
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-  }
+.page:has(.page__buy:target) {
+  overflow: hidden;
+}
 
+.buy {
   &__image {
     width: 100%;
     display: flex;
@@ -42,21 +38,6 @@
   &__photo {
     height: 277px;
     width: 524px;
-  }
-
-  &__link {
-    color: $c-text-buy-menu;
-    border-bottom: 1px solid $c-dark-grey;
-    display: flex;
-    justify-content: center;
-    height: 33px;
-    width: 34%;
-    transition: all .3s ease;
-
-    &:hover {
-      color: $c-contrast;
-      border-bottom: 1px solid $c-contrast;
-    }
   }
 
   &__order {
@@ -148,6 +129,7 @@
   }
 
   &__place-order {
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;

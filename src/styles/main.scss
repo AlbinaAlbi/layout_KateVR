@@ -50,6 +50,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .nav {
@@ -64,7 +65,6 @@ a {
 
 .foto-hover {
   transition: transform $effect-duration ease;
-  cursor: pointer;
 
   &:hover {
     transform: $foto-transform;
@@ -95,4 +95,29 @@ a {
   color: $c-white;
   cursor: pointer;
   font-size: 20px;
+}
+
+.menu-buy {
+  &__nav {
+    padding-top: 19px;
+    height: 33px;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  &__link {
+    color: $c-text-buy-menu;
+    border-bottom: 1px solid $c-dark-grey;
+    display: flex;
+    justify-content: center;
+    height: 33px;
+    width: 34%;
+    transition: all .3s ease;
+
+    &:hover {
+      color: $c-contrast;
+      border-bottom: 1px solid $c-contrast;
+    }
+  }
 }

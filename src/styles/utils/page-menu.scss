@@ -22,10 +22,6 @@
 }
 
 .menu {
-  @include on-tablet {
-    height: 568px;
-  }
-
   &__close {
     display: flex;
     height: 74px;

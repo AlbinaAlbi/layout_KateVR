@@ -41,6 +41,12 @@
     gap: 22px;
     padding-top: 22px;
 
+    &--hide {
+      @media (max-width: 639px) {
+        display: none;
+      }
+    }
+
     @include on-tablet {
       padding: 0;
     }
