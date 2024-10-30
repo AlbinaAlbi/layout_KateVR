@@ -363,7 +363,6 @@
           <div class="about__grid">
             <div class="about__bgimage">
               <div class="swiper">
-
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img
@@ -765,8 +764,10 @@
 
   <script type="module">
     import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
-    import 'swiper/css/pagination';
+    import { Navigation, Pagination } from 'swiper/modules';
+
     const swiper = new Swiper('.swiper', {
+      modules: [Navigation, Pagination],
       direction: 'horizontal',
       loop: true,
 
