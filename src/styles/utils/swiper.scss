@@ -5,12 +5,21 @@
 
 .swiper-wrapper {
   height: 207px;
+
+  @include on-desktop {
+    width: 430px;
+  }
+}
+
+.slide-img {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/photo/person.svg);
+  background-position: center;
+  background-size: cover;
 }
 
 .swiper-slide {
-  height: 207px;
-}
-
-.swiper-img {
   height: 100%;
+  width: 100%;
 }

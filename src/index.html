@@ -361,32 +361,24 @@
 
         <section class="main__about about" id="about">
           <div class="about__grid">
+
             <div class="about__bgimage">
               <div class="swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img
-                    class="swiper-img"
-                    src="images/photo/person.svg"
-                    alt="person">
+                    <div class="slide-img"></div>
                   </div>
                   <div class="swiper-slide">
-                    <img
-                    class="swiper-img"
-                    src="images/photo/person.svg"
-                    alt="person">
+                    <div class="slide-img"></div>
                   </div>
                   <div class="swiper-slide">
-                    <img
-                    class="swiper-img"
-                    src="images/photo/person.svg"
-                    alt="person">
+                    <div class="slide-img"></div>
                   </div>
                 </div>
-
                 <div class="swiper-pagination"></div>
               </div>
             </div>
+
             <div class="about__product">
               <h2 class="about__title">
                 <span class="white-text">ABOUT</span> <span class="blue-text">PRODUCT</span>
@@ -394,28 +386,17 @@
 
               <div class="about__img-hide">
                 <div class="swiper">
-
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img
-                      class="swiper-img"
-                      src="images/photo/person.svg"
-                      alt="person">
+                      <div class="slide-img"></div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                      class="swiper-img"
-                      src="images/photo/person.svg"
-                      alt="person">
+                      <div class="slide-img"></div>
                     </div>
                     <div class="swiper-slide">
-                      <img
-                      class="swiper-img"
-                      src="images/photo/person.svg"
-                      alt="person">
+                      <div class="slide-img"></div>
                     </div>
                   </div>
-
                   <div class="swiper-pagination"></div>
                 </div>
               </div>
@@ -764,22 +745,13 @@
 
   <script type="module">
     import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
-    import { Navigation, Pagination } from 'swiper/modules';
-
     const swiper = new Swiper('.swiper', {
-      modules: [Navigation, Pagination],
       direction: 'horizontal',
       loop: true,
 
       pagination: {
         el: '.swiper-pagination',
-        clickable: true,
-      },
-
-      scrollbar: {
-        el: '.swiper-scrollbar',
       },
     });
-
   </script>
 </html>
