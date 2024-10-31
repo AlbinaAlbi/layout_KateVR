@@ -18,6 +18,16 @@
     }
   }
 
+  &__swiper-count {
+    color: $c-contrast;
+    text-align: right;
+    grid-column: 2/3;
+
+    @media (max-width: 1280px) {
+      display: none;
+    }
+  }
+
   &__title {
     margin: 0;
     padding-bottom: 20px;
