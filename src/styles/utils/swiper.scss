@@ -1,5 +1,4 @@
 .swiper {
-  overflow: hidden;
   text-align: center;
 
   &__navigation {
@@ -35,6 +34,7 @@
 
 .swiper-wrapper {
   height: 207px;
+  overflow: hidden;
 
   @include on-tablet {
     height: 270px;
@@ -61,4 +61,8 @@
 .swiper-slide {
   height: 100%;
   width: 100%;
+}
+
+.swiper-pagination {
+  height: 100%;
 }
